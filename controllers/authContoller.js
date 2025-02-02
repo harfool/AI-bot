@@ -1,6 +1,15 @@
 
+const regisiterContoller = ()=>{
 
-export default {
+}
+const loginController = ()=>{
+
+}
+const logoutController = ()=>{
+    
+}
+
+export  {
     regisiterContoller,
     loginController ,
     logoutController
