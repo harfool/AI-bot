@@ -1,0 +1,33 @@
+{
+  "name": "ai-bot",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/harfool/AI-bot#readme",
+  "bugs": {
+    "url": "https://github.com/harfool/AI-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harfool/AI-bot.git"
+  },
+  "license": "ISC",
+  "author": "harfool gurjar",
+  "type": "module.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "colors": "^1.4.0",
+    "cookie": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9"
+  }
+}
