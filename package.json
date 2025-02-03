@@ -16,12 +16,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "client": "npm run dev --prefix ./client ",
+    "server": "concurrently \"npm run start \" \"npm run client \""
   },
   "dependencies": {
+    "axois": "^0.0.1-security",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
     "colors": "^1.4.0",
+    "concurrently": "^9.1.2",
     "cookie": "^1.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
