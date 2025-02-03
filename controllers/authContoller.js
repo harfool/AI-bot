@@ -40,10 +40,11 @@ const loginController = async (req , res , next) => {
         return next(new errorResponse("invalid Creditial" , 401))
     }
       
-    const correctPassword = await User.matchPassword(password)
-    if (!correctPassword) {
-        return next(new errorHandler("Invalid Creditials " , 401))
+    const isPasswordValid = await user.matchPassword(password);
+    if (!isPasswordValid) {
+      return next(new errorResponse("Invalid credentials", 401));
     }
+
     //res 
     genrateToken(user , 200 , res)
     } catch (error) {

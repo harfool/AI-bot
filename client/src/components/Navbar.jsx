@@ -11,7 +11,7 @@ const Navbar = () => {
   //handle logout
   const handleLogout = async () => {
     try {
-      await axios.post("/api/v1/auth/logout");
+      await axios.post("http://localhost:3000/api/v1/auth/logout");
       localStorage.removeItem("authToken");
       toast.success("logout successfully ");
       navigate("/login");

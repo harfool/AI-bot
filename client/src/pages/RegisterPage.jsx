@@ -27,9 +27,8 @@ const RegisterPage = () => {
     try {
       await axios.post("http://localhost:3000/api/v1/auth/register", { userName, email, password });
       toast.success("User registered successfully");
-      setTimeout(() => {
         navigate("/login");
-      }, 1500);
+     
     } catch (err) {
       console.log(err);
       if (err.response?.data?.error) {
