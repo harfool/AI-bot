@@ -8,6 +8,8 @@ import { themeSettings } from "./pages/Theme"
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { Toaster } from "react-hot-toast"
+import Paragraph from "./pages/ParagraphPage"
+import Summary from "./pages/Summary"
 function App() {
   const theme = useMemo(() => createTheme(themeSettings()), []);
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path="/" element={ <HomePage/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/register" element={<RegisterPage/> } />
+      <Route path="/paragraph" element={<Paragraph/> } />
+      <Route path="/summary" element={<Summary/> } />
     </Routes>
     </ThemeProvider>
     </>

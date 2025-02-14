@@ -6,6 +6,7 @@ import bodyParser   from 'body-parser'
 import dotenv from 'dotenv'
 import dbConnection from './config/DB.js'
 import authRoutes from './routes/authRoutes.js'
+import JarvusRoutes from './routes/JarvusRoutes.js'
 import errorHandler from './middleware/error.middleware.js'
 dotenv.config({ path: './.ENV' })
 
@@ -25,7 +26,7 @@ app.use(errorHandler)
 
 // API routes
 app.use("/api/v1/auth" , authRoutes)
-
+app.use("/api/v1/jarvus/ai" , JarvusRoutes )
 app.listen(PORT , ()=>{
     console.log(`app listen on port in ${process.env.PORT}`.bgCyan.white)
 })
