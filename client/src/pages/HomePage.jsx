@@ -29,7 +29,7 @@ const HomePage = () => {
       >
 <DescriptionRounded  sx={{ fontSize: 40, color: "primary.main", mt: 2, ml: 2 }} />
 <Stack p={5} pt={0} px={2.3} >
-<Typography variant="h5" fontWeight="bold" >Text Summery</Typography>
+<Typography variant="h5" fontWeight="bold" ></Typography>
 <Typography variant="h6" >Summarise your text</Typography>
 </Stack>
 
@@ -37,7 +37,7 @@ const HomePage = () => {
     </Box>
     <Box p={2} >
       <Typography variant="h2" mb={2} fontWeight="bold" >
-        Paragraph Generator
+        Code Reviewer
       </Typography>
       <Card 
       onClick={()=>{nevigate("/paragraph")}}
@@ -56,8 +56,8 @@ const HomePage = () => {
       >
 <FormatAlignLeftOutlined  sx={{ fontSize: 40, color: "primary.main", mt: 2, ml: 2 }} />
 <Stack p={5} pt={0} px={2.3} >
-<Typography variant="h5" fontWeight="bold" >Paragraph</Typography>
-<Typography variant="h6" >Genrate Paragraph with key words </Typography>
+<Typography variant="h5" fontWeight="bold" >Code Review </Typography>
+<Typography variant="h6" >Review your JS code  </Typography>
 </Stack>
 
       </Card>
