@@ -28,7 +28,7 @@ const Paragraph = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:3000/api/v1/jarvus/paragraph", { text });
+      const { data } = await axios.post("/api/v1/jarvus/ai/get-response", { text });
       console.log(data);
       setPara(data);
     } catch (err) {

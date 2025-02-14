@@ -1,11 +1,11 @@
 import codeReviewService from "../Services/codeReviewAI.js"
 
 const  codeReview = async (req , res)=>{
-    const prompt = req.body.prompt
-if (!prompt) {
+    const code = req.body.code
+if (!code) {
     return res.status(400).send("Prompt is required")
 }
-const response = await codeReviewService(prompt)
+const response = await codeReviewService(code)
 res.send(response)
 }
 export default codeReview

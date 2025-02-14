@@ -4,7 +4,7 @@ import generateContantController from "../controllers/generateContant.js";
 
 const router = express.Router();
 
-router.get("/get-response" ,generateContantController )
-router.get("/get-code-review" ,codeReview )
+router.post("/get-response" ,generateContantController )
+router.post("/get-code-review" ,codeReview )
 
 export default router;
