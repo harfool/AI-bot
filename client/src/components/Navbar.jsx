@@ -28,7 +28,7 @@ const Navbar = () => {
       sx={{ boxShadow: 3, mb: 2 }}
     >
       <Typography variant="h1" color="primary" fontWeight="bold">
-        Jarvus the my AI bot
+        Jarvus the  AI bot
       </Typography>
       {loggedIn ? (
         <>

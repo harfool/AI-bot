@@ -22,15 +22,16 @@ const CodeReview = () => {
   const navigate = useNavigate();
   const isNotMobile = useMediaQuery("(min-width: 1000px)");
 
-  // States
+
   const [code, setCode] = useState("");
   const [review, setReview] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Handle form submission
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setCode("")
     if (!code.trim()) {
       setError("Please enter some code to review.");
       return;

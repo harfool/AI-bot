@@ -33,13 +33,16 @@ const Login = () => {
     } catch (err) {
       console.log(err);
       if (err.response?.data?.error) {
-        setError(err.response.data.error);
+        // setError(err.response.data.error);
+        setError(" Invalid credentials please check email or password")
       } else if (err.message) {
-        setError(err.message);
+        // setError(err.message);
+        setError(" Invalid credentials please check email or password")
+
       }
       setTimeout(() => {
         setError("");
-      }, 5000);
+      }, 3000);
     }
   };
 

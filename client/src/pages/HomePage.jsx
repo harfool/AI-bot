@@ -29,7 +29,7 @@ const HomePage = () => {
       >
 <DescriptionRounded  sx={{ fontSize: 40, color: "primary.main", mt: 2, ml: 2 }} />
 <Stack p={5} pt={0} px={2.3} >
-<Typography variant="h5" fontWeight="bold" ></Typography>
+<Typography variant="h5" fontWeight="bold" >Text Summery</Typography>
 <Typography variant="h6" >Summarise your text</Typography>
 </Stack>
 
